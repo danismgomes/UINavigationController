@@ -74,13 +74,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-yk-J1V">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-yk-J1V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-nu-Qgm">
-                                <rect key="frame" x="154" y="679" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-nu-Qgm">
+                                <rect key="frame" x="0.0" y="627" width="414" height="235"/>
                                 <state key="normal" title="Secret Passage"/>
                                 <connections>
                                     <segue destination="btw-hv-OcK" kind="show" id="Wq4-nv-Jib"/>
@@ -88,6 +86,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QmO-nu-Qgm" firstAttribute="leading" secondItem="jqb-wE-QKf" secondAttribute="leading" id="0DG-wQ-JcC"/>
+                            <constraint firstItem="QmO-nu-Qgm" firstAttribute="top" secondItem="fxb-yk-J1V" secondAttribute="bottom" id="Gg6-uk-4JL"/>
+                            <constraint firstItem="jqb-wE-QKf" firstAttribute="bottom" secondItem="QmO-nu-Qgm" secondAttribute="bottom" id="JC6-Vk-Kkr"/>
+                            <constraint firstItem="fxb-yk-J1V" firstAttribute="leading" secondItem="jqb-wE-QKf" secondAttribute="leading" id="NIi-WD-wZQ"/>
+                            <constraint firstItem="fxb-yk-J1V" firstAttribute="top" secondItem="PKE-Cl-flC" secondAttribute="top" id="biK-MQ-qa3"/>
+                            <constraint firstItem="fxb-yk-J1V" firstAttribute="height" secondItem="PKE-Cl-flC" secondAttribute="height" multiplier="0.7" id="hOi-WS-kPx"/>
+                            <constraint firstItem="fxb-yk-J1V" firstAttribute="trailing" secondItem="jqb-wE-QKf" secondAttribute="trailing" id="jkx-vQ-2v0"/>
+                            <constraint firstItem="jqb-wE-QKf" firstAttribute="trailing" secondItem="QmO-nu-Qgm" secondAttribute="trailing" id="m6I-62-tkl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jqb-wE-QKf"/>
                     </view>
                 </viewController>
@@ -103,30 +111,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-zh-Jgd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="IWJ-zh-Jgd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Acj-rr-34j">
-                                <rect key="frame" x="152" y="624" width="108" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Acj-rr-34j">
+                                <rect key="frame" x="0.0" y="627" width="414" height="235"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abn-HG-T0Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="78.5"/>
                                         <state key="normal" title="Dugeon"/>
                                         <connections>
                                             <segue destination="ZWQ-RN-NdI" kind="show" id="j1C-gD-PfU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgT-Jo-KkO">
-                                        <rect key="frame" x="0.0" y="30" width="108" height="30"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="414" height="78"/>
                                         <state key="normal" title="Laboratory"/>
                                         <connections>
                                             <segue destination="X75-Bq-o7P" kind="show" id="3tL-n4-lRg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTA-ah-Q6y">
-                                        <rect key="frame" x="0.0" y="60" width="108" height="30"/>
+                                        <rect key="frame" x="0.0" y="156.5" width="414" height="78.5"/>
                                         <state key="normal" title="Misterious Lake"/>
                                         <connections>
                                             <segue destination="0uf-Dv-FyJ" kind="show" id="94C-jT-RP9"/>
@@ -136,6 +142,16 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IWJ-zh-Jgd" firstAttribute="height" secondItem="SrO-hz-2wz" secondAttribute="height" multiplier="0.7" id="8xS-kz-rl5"/>
+                            <constraint firstItem="IWJ-zh-Jgd" firstAttribute="top" secondItem="SrO-hz-2wz" secondAttribute="top" id="EN8-Zy-iUg"/>
+                            <constraint firstItem="Acj-rr-34j" firstAttribute="top" secondItem="IWJ-zh-Jgd" secondAttribute="bottom" id="SwT-9p-aDO"/>
+                            <constraint firstItem="Acj-rr-34j" firstAttribute="leading" secondItem="TKL-B8-nnf" secondAttribute="leading" id="clj-5T-CXQ"/>
+                            <constraint firstItem="IWJ-zh-Jgd" firstAttribute="leading" secondItem="TKL-B8-nnf" secondAttribute="leading" id="dQG-PU-D85"/>
+                            <constraint firstItem="TKL-B8-nnf" firstAttribute="trailing" secondItem="Acj-rr-34j" secondAttribute="trailing" id="vA0-xg-eNZ"/>
+                            <constraint firstItem="IWJ-zh-Jgd" firstAttribute="trailing" secondItem="TKL-B8-nnf" secondAttribute="trailing" id="xeg-OG-0ux"/>
+                            <constraint firstItem="TKL-B8-nnf" firstAttribute="bottom" secondItem="Acj-rr-34j" secondAttribute="bottom" id="xep-7V-ILK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TKL-B8-nnf"/>
                     </view>
                 </viewController>
@@ -151,13 +167,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="4KY-O2-q4D">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="4KY-O2-q4D">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-su-kna">
-                                <rect key="frame" x="168" y="679" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ar7-su-kna">
+                                <rect key="frame" x="0.0" y="627" width="414" height="235"/>
                                 <state key="normal" title="Back porch"/>
                                 <connections>
                                     <segue destination="HuE-LT-BtY" kind="show" id="vPh-88-5Mo"/>
@@ -165,6 +179,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ar7-su-kna" firstAttribute="top" secondItem="4KY-O2-q4D" secondAttribute="bottom" id="6n5-1Q-hBi"/>
+                            <constraint firstItem="4KY-O2-q4D" firstAttribute="leading" secondItem="JRc-Cc-Gb1" secondAttribute="leading" id="Duc-bN-l8G"/>
+                            <constraint firstItem="JRc-Cc-Gb1" firstAttribute="bottom" secondItem="Ar7-su-kna" secondAttribute="bottom" id="R3D-59-I3d"/>
+                            <constraint firstItem="Ar7-su-kna" firstAttribute="leading" secondItem="JRc-Cc-Gb1" secondAttribute="leading" id="SpW-cY-oUH"/>
+                            <constraint firstItem="4KY-O2-q4D" firstAttribute="top" secondItem="mql-oa-gre" secondAttribute="top" id="c5Q-Qz-jhB"/>
+                            <constraint firstItem="4KY-O2-q4D" firstAttribute="height" secondItem="mql-oa-gre" secondAttribute="height" multiplier="0.7" id="olt-uh-TST"/>
+                            <constraint firstItem="JRc-Cc-Gb1" firstAttribute="trailing" secondItem="Ar7-su-kna" secondAttribute="trailing" id="pxF-tb-hOK"/>
+                            <constraint firstItem="4KY-O2-q4D" firstAttribute="trailing" secondItem="JRc-Cc-Gb1" secondAttribute="trailing" id="xx0-f1-gVH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JRc-Cc-Gb1"/>
                     </view>
                 </viewController>
@@ -180,12 +204,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="qze-Ul-1g9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="qze-Ul-1g9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qze-Ul-1g9" firstAttribute="height" secondItem="Tqa-pb-qpT" secondAttribute="height" multiplier="0.7" id="13A-va-dgo"/>
+                            <constraint firstItem="qze-Ul-1g9" firstAttribute="top" secondItem="Tqa-pb-qpT" secondAttribute="top" id="1Y0-hh-Krh"/>
+                            <constraint firstItem="qze-Ul-1g9" firstAttribute="trailing" secondItem="GVg-ky-yjl" secondAttribute="trailing" id="ZCg-Ty-HVc"/>
+                            <constraint firstItem="qze-Ul-1g9" firstAttribute="leading" secondItem="GVg-ky-yjl" secondAttribute="leading" id="q9x-cl-VkK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GVg-ky-yjl"/>
                     </view>
                 </viewController>
@@ -201,13 +230,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="6P9-cz-DL4">
-                                <rect key="frame" x="0.0" y="62" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="6P9-cz-DL4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-jb-nRT">
-                                <rect key="frame" x="173" y="697" width="69" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-jb-nRT">
+                                <rect key="frame" x="0.0" y="627" width="414" height="235"/>
                                 <state key="normal" title="Generator"/>
                                 <connections>
                                     <segue destination="6et-xH-gJU" kind="show" id="Ulp-WR-aUa"/>
@@ -215,6 +242,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NMS-jb-nRT" firstAttribute="leading" secondItem="cKm-PB-1UX" secondAttribute="leading" id="50c-Pn-klS"/>
+                            <constraint firstItem="6P9-cz-DL4" firstAttribute="trailing" secondItem="cKm-PB-1UX" secondAttribute="trailing" id="6sd-uM-5Ze"/>
+                            <constraint firstItem="6P9-cz-DL4" firstAttribute="top" secondItem="mge-1J-vWx" secondAttribute="top" id="71b-ol-aZl"/>
+                            <constraint firstItem="cKm-PB-1UX" firstAttribute="trailing" secondItem="NMS-jb-nRT" secondAttribute="trailing" id="GJM-fH-yxD"/>
+                            <constraint firstItem="6P9-cz-DL4" firstAttribute="height" secondItem="mge-1J-vWx" secondAttribute="height" multiplier="0.7" id="Nel-Pk-g8u"/>
+                            <constraint firstItem="cKm-PB-1UX" firstAttribute="bottom" secondItem="NMS-jb-nRT" secondAttribute="bottom" id="dLf-um-RNJ"/>
+                            <constraint firstItem="NMS-jb-nRT" firstAttribute="top" secondItem="6P9-cz-DL4" secondAttribute="bottom" id="gGT-SD-V1R"/>
+                            <constraint firstItem="6P9-cz-DL4" firstAttribute="leading" secondItem="cKm-PB-1UX" secondAttribute="leading" id="sxd-16-Jd4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cKm-PB-1UX"/>
                     </view>
                 </viewController>
@@ -230,12 +267,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="generator" translatesAutoresizingMaskIntoConstraints="NO" id="kxW-IE-xnE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generator" translatesAutoresizingMaskIntoConstraints="NO" id="kxW-IE-xnE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kxW-IE-xnE" firstAttribute="leading" secondItem="7M9-Uk-52O" secondAttribute="leading" id="2zg-jc-Raf"/>
+                            <constraint firstItem="kxW-IE-xnE" firstAttribute="top" secondItem="mZE-TO-mMp" secondAttribute="top" id="65C-XX-8HD"/>
+                            <constraint firstItem="kxW-IE-xnE" firstAttribute="trailing" secondItem="7M9-Uk-52O" secondAttribute="trailing" id="NWo-iS-dXq"/>
+                            <constraint firstItem="kxW-IE-xnE" firstAttribute="height" secondItem="mZE-TO-mMp" secondAttribute="height" multiplier="0.7" id="hBT-EG-tDH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7M9-Uk-52O"/>
                     </view>
                 </viewController>
@@ -251,12 +293,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cursed_chalice" translatesAutoresizingMaskIntoConstraints="NO" id="j2O-5o-T2c">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursed_chalice" translatesAutoresizingMaskIntoConstraints="NO" id="j2O-5o-T2c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j2O-5o-T2c" firstAttribute="top" secondItem="guF-9g-qta" secondAttribute="top" id="0NR-1X-1dt"/>
+                            <constraint firstItem="j2O-5o-T2c" firstAttribute="leading" secondItem="jv2-go-9Dz" secondAttribute="leading" id="UTt-bU-wiX"/>
+                            <constraint firstItem="j2O-5o-T2c" firstAttribute="trailing" secondItem="jv2-go-9Dz" secondAttribute="trailing" id="gXl-So-OrY"/>
+                            <constraint firstItem="j2O-5o-T2c" firstAttribute="height" secondItem="guF-9g-qta" secondAttribute="height" multiplier="0.7" id="hQM-KD-9as"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jv2-go-9Dz"/>
                     </view>
                 </viewController>
@@ -272,13 +319,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mysterious_lake" translatesAutoresizingMaskIntoConstraints="NO" id="6OJ-BA-T8L">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mysterious_lake" translatesAutoresizingMaskIntoConstraints="NO" id="6OJ-BA-T8L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJx-Ns-PVR">
-                                <rect key="frame" x="155" y="679" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJx-Ns-PVR">
+                                <rect key="frame" x="0.0" y="627" width="414" height="235"/>
                                 <state key="normal" title="Cursed Chalice"/>
                                 <connections>
                                     <segue destination="Trw-PZ-uUh" kind="show" id="ojd-Ue-fkN"/>
@@ -286,6 +331,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6OJ-BA-T8L" firstAttribute="trailing" secondItem="hWC-UV-o60" secondAttribute="trailing" id="BAb-7W-Uuz"/>
+                            <constraint firstItem="ZJx-Ns-PVR" firstAttribute="leading" secondItem="hWC-UV-o60" secondAttribute="leading" id="HTa-22-7wK"/>
+                            <constraint firstItem="6OJ-BA-T8L" firstAttribute="top" secondItem="b15-qG-Es6" secondAttribute="top" id="Mef-zS-j74"/>
+                            <constraint firstItem="6OJ-BA-T8L" firstAttribute="height" secondItem="b15-qG-Es6" secondAttribute="height" multiplier="0.7" id="Qv0-6J-rTf"/>
+                            <constraint firstItem="ZJx-Ns-PVR" firstAttribute="top" secondItem="6OJ-BA-T8L" secondAttribute="bottom" id="jzM-CE-eJR"/>
+                            <constraint firstItem="6OJ-BA-T8L" firstAttribute="leading" secondItem="hWC-UV-o60" secondAttribute="leading" id="u8y-DF-bbu"/>
+                            <constraint firstItem="hWC-UV-o60" firstAttribute="bottom" secondItem="ZJx-Ns-PVR" secondAttribute="bottom" id="vU3-dL-Bj6"/>
+                            <constraint firstItem="hWC-UV-o60" firstAttribute="trailing" secondItem="ZJx-Ns-PVR" secondAttribute="trailing" id="y3d-jI-Yb7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hWC-UV-o60"/>
                     </view>
                 </viewController>
@@ -301,12 +356,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back_porch" translatesAutoresizingMaskIntoConstraints="NO" id="XWg-bG-5ig">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_porch" translatesAutoresizingMaskIntoConstraints="NO" id="XWg-bG-5ig">
                                 <rect key="frame" x="0.0" y="88" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XWg-bG-5ig" firstAttribute="leading" secondItem="Dfz-mB-Cmt" secondAttribute="leading" id="AGN-l9-XH8"/>
+                            <constraint firstItem="XWg-bG-5ig" firstAttribute="top" secondItem="Dfz-mB-Cmt" secondAttribute="top" id="EzV-aw-NcT"/>
+                            <constraint firstItem="XWg-bG-5ig" firstAttribute="height" secondItem="fgB-q7-ph9" secondAttribute="height" multiplier="0.7" id="lNj-gV-3Vw"/>
+                            <constraint firstItem="XWg-bG-5ig" firstAttribute="trailing" secondItem="Dfz-mB-Cmt" secondAttribute="trailing" id="pTK-m7-CBk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dfz-mB-Cmt"/>
                     </view>
                 </viewController>
@@ -322,12 +382,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="GQd-vg-aZJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="GQd-vg-aZJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GQd-vg-aZJ" firstAttribute="height" secondItem="3SX-fO-2S4" secondAttribute="height" multiplier="0.7" id="6iZ-te-lvZ"/>
+                            <constraint firstItem="GQd-vg-aZJ" firstAttribute="leading" secondItem="unu-Rf-mLe" secondAttribute="leading" id="J9I-E1-F51"/>
+                            <constraint firstItem="GQd-vg-aZJ" firstAttribute="trailing" secondItem="unu-Rf-mLe" secondAttribute="trailing" id="Nsr-Zd-xJq"/>
+                            <constraint firstItem="GQd-vg-aZJ" firstAttribute="top" secondItem="3SX-fO-2S4" secondAttribute="top" id="a4n-Cg-uHW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="unu-Rf-mLe"/>
                     </view>
                 </viewController>
@@ -343,12 +408,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="22g-Nm-VGv">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="22g-Nm-VGv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="22g-Nm-VGv" firstAttribute="trailing" secondItem="obZ-Ak-jKm" secondAttribute="trailing" id="Agv-EY-lA1"/>
+                            <constraint firstItem="22g-Nm-VGv" firstAttribute="top" secondItem="AaN-Yd-KV6" secondAttribute="top" id="JJv-Qq-W8J"/>
+                            <constraint firstItem="22g-Nm-VGv" firstAttribute="height" secondItem="AaN-Yd-KV6" secondAttribute="height" multiplier="0.7" id="wlJ-4W-9Sk"/>
+                            <constraint firstItem="22g-Nm-VGv" firstAttribute="leading" secondItem="obZ-Ak-jKm" secondAttribute="leading" id="zFC-6e-jO4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="obZ-Ak-jKm"/>
                     </view>
                 </viewController>
@@ -364,13 +434,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="45U-2U-hKL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="45U-2U-hKL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpH-IW-pPF">
-                                <rect key="frame" x="181" y="597" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpH-IW-pPF">
+                                <rect key="frame" x="0.0" y="627" width="414" height="235"/>
                                 <state key="normal" title="Kitchen"/>
                                 <connections>
                                     <segue destination="ylb-iY-nYm" kind="show" id="My9-hg-Rzm"/>
@@ -378,6 +446,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="45U-2U-hKL" firstAttribute="trailing" secondItem="3Np-VU-qcu" secondAttribute="trailing" id="4so-NB-M3t"/>
+                            <constraint firstItem="3Np-VU-qcu" firstAttribute="trailing" secondItem="PpH-IW-pPF" secondAttribute="trailing" id="Ocg-wY-wBJ"/>
+                            <constraint firstItem="3Np-VU-qcu" firstAttribute="bottom" secondItem="PpH-IW-pPF" secondAttribute="bottom" id="U5R-14-vuw"/>
+                            <constraint firstItem="PpH-IW-pPF" firstAttribute="top" secondItem="45U-2U-hKL" secondAttribute="bottom" id="Uc8-bC-OyI"/>
+                            <constraint firstItem="45U-2U-hKL" firstAttribute="leading" secondItem="3Np-VU-qcu" secondAttribute="leading" id="bto-kD-d9j"/>
+                            <constraint firstItem="PpH-IW-pPF" firstAttribute="leading" secondItem="3Np-VU-qcu" secondAttribute="leading" id="eka-B5-PiJ"/>
+                            <constraint firstItem="45U-2U-hKL" firstAttribute="height" secondItem="vcu-fl-0ga" secondAttribute="height" multiplier="0.7" id="rRJ-yy-AOV"/>
+                            <constraint firstItem="45U-2U-hKL" firstAttribute="top" secondItem="vcu-fl-0ga" secondAttribute="top" id="z9F-AV-f9m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Np-VU-qcu"/>
                     </view>
                 </viewController>
@@ -393,23 +471,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stairs_up" translatesAutoresizingMaskIntoConstraints="NO" id="9Zx-tZ-XNd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="627"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stairs_up" translatesAutoresizingMaskIntoConstraints="NO" id="9Zx-tZ-XNd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="627"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-KM-2lZ">
-                                <rect key="frame" x="152" y="603" width="67" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GMy-KM-2lZ">
+                                <rect key="frame" x="0.0" y="715" width="414" height="147"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynt-qN-tO8">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
                                         <state key="normal" title="Bedroom"/>
                                         <connections>
                                             <segue destination="EYq-Pk-fsP" kind="show" id="mWW-7C-QmG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPF-rI-546">
-                                        <rect key="frame" x="0.0" y="30" width="67" height="30"/>
+                                        <rect key="frame" x="0.0" y="73.5" width="414" height="73.5"/>
                                         <state key="normal" title="Bathroom"/>
                                         <connections>
                                             <segue destination="ejy-Bv-h2J" kind="show" id="OXh-zb-Ngh"/>
@@ -419,6 +495,16 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Zx-tZ-XNd" firstAttribute="leading" secondItem="4cn-UJ-i3T" secondAttribute="leading" id="G2c-DI-rh5"/>
+                            <constraint firstItem="GMy-KM-2lZ" firstAttribute="leading" secondItem="4cn-UJ-i3T" secondAttribute="leading" id="Lie-QP-muu"/>
+                            <constraint firstItem="9Zx-tZ-XNd" firstAttribute="trailing" secondItem="4cn-UJ-i3T" secondAttribute="trailing" id="MMT-5W-D2h"/>
+                            <constraint firstItem="4cn-UJ-i3T" firstAttribute="trailing" secondItem="GMy-KM-2lZ" secondAttribute="trailing" id="XTl-F2-TRO"/>
+                            <constraint firstItem="4cn-UJ-i3T" firstAttribute="bottom" secondItem="GMy-KM-2lZ" secondAttribute="bottom" id="Y9d-oY-gkd"/>
+                            <constraint firstItem="9Zx-tZ-XNd" firstAttribute="height" secondItem="DVX-WJ-OGX" secondAttribute="height" multiplier="0.7" id="gTg-KM-4b4"/>
+                            <constraint firstItem="9Zx-tZ-XNd" firstAttribute="top" secondItem="4cn-UJ-i3T" secondAttribute="top" id="pNj-Ys-jhF"/>
+                            <constraint firstItem="GMy-KM-2lZ" firstAttribute="top" secondItem="9Zx-tZ-XNd" secondAttribute="bottom" id="wC8-UR-jXX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4cn-UJ-i3T"/>
                     </view>
                 </viewController>
